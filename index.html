@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <h1>Jogo de Perguntas e Respostas</h1>
+    <div class="container">
+      <!-- Contador de perguntas -->
+      <div class="questions_numberId" id="questions_numberId">
+        Pergunta 1 de 10
+      </div>
+
+      <!-- Texto da pergunta -->
+      <div class="question" id="question">
+        <p>Carregando pergunta...</p>
+      </div>
+
+      <!-- Botões das opções -->
+      <section class="options-grid" id="options-grid">
+        <button class="card-optionA" onclick="check_question(0)"></button>
+        <button class="card-optionC" onclick="check_question(1)"></button>
+        <button class="card-optionB" onclick="check_question(2)"></button>
+        <button class="card-optionD" onclick="check_question(3)"></button>
+      </section>
+
+      <!-- Feedback de resposta -->
+      <div class="feedback correct" id="correct"></div>
+
+      <!-- Botões de Ação para a proxima pergunta-->
+      <button type="button" class="btn-next" id="btn-next" onclick="next_question()">Próxima >></button>
+
+      <!-- Botões de Ação para a reiciar e só aparece no fina doc  quiz-->
+      <button type="button" class="btn-next" id="btn-restart" onclick="restart_quiz()">Reiniciar Quiz</button>
+    </div>
+
+    <footer>
+      <p>Desenvolvido pelo <strong>Grupo 21</strong> — Checkpoint 1</p>
+      <div class="footer-links">
+        <a href="#">Repositório GitHub</a>
+        <span>•</span>
+        <a href="#">Documentação</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
