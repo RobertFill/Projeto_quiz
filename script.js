@@ -72,8 +72,9 @@ function next_question() {
     indice++;
     showQuestion();
   } else {
+
     // Tela de encerramento do Quiz
-    document.getElementById("questions_numberId").innerText = "Fim do Quiz!";
+    document.getElementById("questions_numberId").innerText = "Fim do Quiz!"; // mensagem após terminar o quiz
     document.getElementById("question").innerText = "Parabéns! Você concluiu todas as perguntas.";
     document.getElementById("options-grid").style.display = "none";
     document.getElementById("correct").style.display = "none";
