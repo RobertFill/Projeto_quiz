@@ -32,12 +32,7 @@ Após terminar o QUIZ,exibe uma mensagem de parabéns,e com um botão de reinici
 
 
 
-
-
-
-
-
-
+link do projeto:https://robertfill.github.io/Projeto_quiz/
 feito por:
  - Filipe Robert soares
  - Arthur Arias da Silva
