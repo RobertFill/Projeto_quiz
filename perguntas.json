@@ -1,49 +1,49 @@
 [
     {
         "id":1,
-        "pergunta": "lorem ipsum",
+        "pergunta": "Qual componente é responsável pelo processamento gráfico?",
         "opcoes" :[
 
-            "A - lorem ipu",
-            "C - lorem ipu",
-            "B - lorem ipu",
-            "D - lorem ipu"
-        ],
-        "respostaCorreta": 0
-    },
-    {
-        "id":2,
-        "pergunta": "lorem ipsum",
-        "opcoes" :[
-
-            "A - lorem ipu",
-            "C - lorem ipu",
-            "B - lorem ipu",
-            "D - lorem ipu"
+            "A - SSD",
+            "C - Placa de vídeo (GPU)",
+            "B - Fonte de alimentação",
+            "D - Memória RAM"
         ],
         "respostaCorreta": 1
     },
     {
-        "id":3,
-        "pergunta": "lorem ipsum",
+        "id":2,
+        "pergunta": "Qual é a função da memória RAM?",
         "opcoes" :[
 
-            "A - lorem ipu",
-            "C - lorem ipu",
-            "B - lorem ipu",
-            "D - lorem ipu"
+            "A - Armazenar temporariamente dados dos programas em execução",
+            "C - Resfriar o processador",
+            "B - Guardar arquivos permanentemente",
+            "D - Distribuir energia elétrica"
         ],
-        "respostaCorreta": 2
+        "respostaCorreta": 0
+    },
+    {
+        "id":3,
+        "pergunta": "Qual componente armazena arquivos e programas de forma permanente?",
+        "opcoes" :[
+
+            "A - Cooler",
+            "C - Memória RAM",
+            "B - Memória cache",
+            "D - SSD ou HD"
+        ],
+        "respostaCorreta": 3
     },
     {
         "id":4,
-        "pergunta": "lorem ipsum",
+        "pergunta": "Qual é a função da placa-mãe?",
         "opcoes" :[
 
-            "A - lorem ipu",
-            "C - lorem ipu",
-            "B - lorem ipu",
-            "D - lorem ipu"
+            "A - Exibir imagens na tela",
+            "C - Armazenar energia elétrica",
+            "B - Conectar e permitir a comunicação entre os componentes",
+            "D - Controlar exclusivamente o áudio"
         ],
         "respostaCorreta": 3
     },
