@@ -85,7 +85,7 @@
     },
     {
         {
-    "id": 08,
+    "id": 8,
     "pergunta": "Qual componente é considerado o 'cérebro' do computador, responsável por processar os dados e executar instruções?",
     "opcoes": [
       "A - Memória RAM",
@@ -97,7 +97,7 @@
   },
   {
        {
-    "id": 09,
+    "id": 9,
     "pergunta": "Qual componente é responsável por receber a energia da tomada e convertê-la nas voltagens adequadas para o funcionamento seguro das outras peças do computador?",
     "opcoes": [
       "A - Placa de Vídeo (GPU)",
