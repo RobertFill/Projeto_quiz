@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: 0.2s;
 }
 
@@ -11,18 +11,32 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between; /* Mantém o footer no rodapé */
-  background-image: url('img/img_glass.jpg');
+  background-image: url("img/img_glass.jpg");
   background-size: cover; /* para redimensionar a imagem*/
   background-position: center;
   background-repeat: no-repeat; /* sem repetir imagem*/
   min-height: 100vh;
   color: #ffffff;
+
 }
 
 h1 {
-  margin-top: 20px;
-  font-size: 3pc;
+  margin-top: 1.2rem;
+  font-size: 2.5pc;
   font-style: oblique;
+  text-align: center;
+
+  text-transform: uppercase;
+  text-shadow: 4px 6px 1px #201241;
+
+  color: #948ae7;
+  background-color: rgba(45, 55, 72, 0.6); /* para deixar meio transparente*/
+  padding: 19px;
+  border: 1px solid;
+  border-radius: 10px;
+
+  max-width: 850px;
+  width: 90%;
 }
 
 /* Container do Quiz centralizado */
@@ -37,6 +51,11 @@ h1 {
   padding: 45px;
   gap: 18px;
   margin: auto 0; /* Centraliza o quiz na vertical */
+
+  background-color: rgba(45, 55, 72, 0.9); /* para deixar meio transparente*/
+  border: 2px solid;
+  border-radius: 10px;
+  color: #948ae7;
 }
 
 .questions_numberId {
@@ -66,7 +85,10 @@ h1 {
   gap: 18px;
 }
 
-.card-optionA, .card-optionB, .card-optionC, .card-optionD {
+.card-optionA,
+.card-optionB,
+.card-optionC,
+.card-optionD {
   background-color: #3874a6;
   color: #ffffff;
   border: none;
@@ -78,7 +100,10 @@ h1 {
   text-align: center;
 }
 
-.card-optionA:hover, .card-optionB:hover, .card-optionC:hover, .card-optionD:hover {
+.card-optionA:hover,
+.card-optionB:hover,
+.card-optionC:hover,
+.card-optionD:hover {
   background-color: #2b5c85;
   font-size: 1.1rem;
 }
@@ -98,8 +123,9 @@ h1 {
   font-size: 0.95rem;
   font-weight: 500;
 }
-#correct{  /*desativarn */
-  display:none;
+#correct {
+  /*desativarn */
+  display: none;
 }
 
 .btn-next {
@@ -113,7 +139,7 @@ h1 {
   cursor: pointer;
   margin-top: 8px;
 }
-#btn-restart{
+#btn-restart {
   display: none;
 }
 
@@ -127,7 +153,7 @@ footer {
   width: 100%;
   background-color: black;
   border-top: 1px solid #2d3748;
-  padding: 16px 20px;
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,13 +187,24 @@ footer p strong {
   color: #4a5568;
 }
 
-/* Responsividade */
+/* Responsividade e verção mobile */
+
+@media (max-width: 858px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+
 @media (max-width: 480px) {
+
   .options-grid {
     grid-template-columns: 1fr;
   }
 
   .container {
     padding: 16px;
+  }
+  h1 {
+    font-size: 31px;
   }
 }
