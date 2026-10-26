@@ -1,4 +1,4 @@
-# QUIZ: ANOTOMIA DE COMPOTUDAORES
+# QUIZ: ANATOMIA DE COMPUTADORES
 ## projeto de QUIZ(Jogos) para exercitar a mente ao mesmo tempo enquanto aprende.
 ### projeto feito com:
 
