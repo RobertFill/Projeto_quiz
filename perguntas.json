@@ -85,36 +85,37 @@
     },
     {
         {
-    "id": 8,
-    "pergunta": "Qual componente é considerado o 'cérebro' do computador, responsável por processar os dados e executar instruções?",
-    "opcoes": [
-      "A - Memória RAM",
-      "B - Placa-mãe",
-      "C - Processador (CPU)",
-      "D - Disco Rígido (HD/SSD)"
-    ],
-    "respostaCorreta": 2
-  },
-  {
+   {
+  "id": 8,
+  "pergunta": "Qual componente é considerado o cérebro do computador?",
+  "opcoes": [
+    "A - Memória RAM",
+    "B - Placa-mãe",
+    "C - Processador (CPU)",
+    "D - Disco Rígido (HD/SSD)"
+  ],
+  "respostaCorreta": 2
+}
        {
-    "id": 9,
-    "pergunta": "Qual componente é responsável por receber a energia da tomada e convertê-la nas voltagens adequadas para o funcionamento seguro das outras peças do computador?",
-    "opcoes": [
-      "A - Placa de Vídeo (GPU)",
-      "B - Fonte de Alimentação (ATX)",
-      "C - Placa de Rede",
-      "D - Memória ROM"
-    ],
-    "respostaCorreta": 1
-  },
-  {
-       "id": 10,
-    "pergunta": "Sobre as unidades de armazenamento, qual é a principal vantagem de um SSD (Solid State Drive) em relação a um HD (Hard Disk) tradicional?",
-    "opcoes": [
-      "A - O SSD possui discos magnéticos maiores, o que o torna mais pesado.",
-      "B - O SSD é imune a vírus e ataques cibernéticos de qualquer tipo.",
-      "C - O SSD utiliza memória flash, o que o torna muito mais rápido e resistente a impactos mecânicos.",
-      "D - O SSD depende de conexão com a internet para conseguir salvar os arquivos do usuário."
-    ],
-    "respostaCorreta": 2
-  }
+    {
+  "id": 9,
+  "pergunta": "Qual componente é responsável por receber a energia da tomada e convertê-la nas voltagens adequadas para o funcionamento seguro das outras peças do computador?",
+  "opcoes": [
+    "A - Placa de Vídeo (GPU)",
+    "B - Fonte de Alimentação (ATX)",
+    "C - Placa de Rede",
+    "D - Memória ROM"
+  ],
+  "respostaCorreta": 1
+}
+       {
+  "id": 10,
+  "pergunta": "Sobre as unidades de armazenamento, qual é a principal vantagem de um SSD (Solid State Drive) em relação a um HD (Hard Disk) tradicional?",
+  "opcoes": [
+    "A - O SSD possui discos magnéticos maiores, o que o torna mais pesado.",
+    "B - O SSD é imune a vírus e ataques cibernéticos de qualquer tipo.",
+    "C - O SSD utiliza memória flash, o que o torna muito mais rápido e resistente a impactos mecânicos.",
+    "D - O SSD depende de conexão com a internet para salvar os arquivos do usuário."
+  ],
+  "respostaCorreta": 2
+}
