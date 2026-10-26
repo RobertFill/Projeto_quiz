@@ -13,17 +13,10 @@ Após terminar o QUIZ,exibe uma mensagem de parabéns,e com um botão de reinici
 </p>
 
 
-<img width="1849" height="1079" alt="preview" src="https://github.com/user-attachments/assets/f374a350-95df-4a02-8c93-b9dc14743977" />
 
 
 
-
-
-
-
-
-
-
+<img width="1528" height="814" alt="novo" src="https://github.com/user-attachments/assets/ce19d92f-0446-49d8-9edc-bfc0102073ef" />
 
 
 
