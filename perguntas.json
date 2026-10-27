@@ -45,12 +45,12 @@
   },
   {
     "id": 5,
-    "pergunta": "Qual componente é considerado o cérebro do computador?",
+    "pergunta": "Qual é a principal diferença entre SSD e HD",
     "opcoes": [
-      "A - Processador (CPU).",
-      "B - Placa de vídeo.",
-      "C - Memória RAM.",
-      "D - Fonte de alimentação."
+      "A - SSD só funciona com internet",
+      "B - O HD não armazena dados",
+      "C - O SSD serve apenas para instalar programas",
+      "D - O SSD utiliza memória flash e não possui discos magnéticos móveis"
     ],
     "respostaCorreta": 0
   },
@@ -58,10 +58,10 @@
     "id": 6,
     "pergunta": "Qual hardware é utilizado para exibir imagens e vídeos?",
     "opcoes": [
-      "A - Fonte de alimentação.",
-      "B - Teclado.",
-      "C - Placa de vídeo (GPU).",
-      "D - Memória RAM."
+      "A - Fonte de alimentação",
+      "B - Teclado",
+      "C - Placa de vídeo (GPU)",
+      "D - Memória RAM"
     ],
     "respostaCorreta": 2
   },
@@ -84,8 +84,6 @@
       "B - Placa-mãe",
       "C - Processador (CPU)",
       "D - Disco Rígido (HD/SSD)"
-    ],
-    "respostaCorreta": 2
   },
   {
     "id": 9,
