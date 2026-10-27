@@ -14,7 +14,7 @@ Após terminar o QUIZ,exibe uma mensagem de parabéns,e com um botão de reinici
 
 
 
-## preview desk top
+## Preview Desktop
 <img width="1438" height="808" alt="box1" src="https://github.com/user-attachments/assets/2087695c-2bfb-4042-99b8-ade7c25719a6" />
 <img width="1503" height="820" alt="box2" src="https://github.com/user-attachments/assets/dbaf3318-4abb-4949-8458-95847aae0c28" />
 <img width="1502" height="819" alt="box3" src="https://github.com/user-attachments/assets/dfc25c3c-f108-4d44-86fb-ba8ea1b1790d" />
@@ -22,7 +22,7 @@ Após terminar o QUIZ,exibe uma mensagem de parabéns,e com um botão de reinici
 <br>
 <br>
 
-## preview mobile
+## preview Mobile
 <img width="357" height="721" alt="box4" src="https://github.com/user-attachments/assets/9b5d4eaa-9d3a-42fb-a826-625b1a05a4bf" />
 
 <br>
