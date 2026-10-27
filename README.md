@@ -39,7 +39,7 @@ link do projeto:https://robertfill.github.io/Projeto_quiz/
 
 
 feito por:
- - Filipe Robert Soares
- - Arthur Arias da Silva
+ - Filipe Robert Soares  
+ - Arthur Arias da Silva    
  - Juan Pablo Camilo dos Santos
  - Herlon Filgueiras Verissimo de Oliveira
