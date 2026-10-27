@@ -22,7 +22,7 @@ Após terminar o QUIZ,exibe uma mensagem de parabéns,e com um botão de reinici
 <br>
 <br>
 
-## preview Mobile
+## Preview Mobile
 <img width="357" height="721" alt="box4" src="https://github.com/user-attachments/assets/9b5d4eaa-9d3a-42fb-a826-625b1a05a4bf" />
 
 <br>
