@@ -14,7 +14,7 @@ fetch("perguntas.json")
 function showQuestion() {
   respondido = false; // Libera a resposta para a nova pergunta
   
-  let feedbackEl = document.getElementById("correct");
+  let feedbackEl = document.getElementById("correct");// o display desativado de resposta correta
   feedbackEl.style.display = "none";
 
   let q = questList[indice];
@@ -32,6 +32,7 @@ function showQuestion() {
     btn.innerText = q.opcoes[i];
     btn.disabled = false;
     btn.classList.remove("correct-option"); // Limpa o destaque verde anterior
+    btn.classList.remove("incorret-option"); // Limpa o destaque vermelho anterior
   });
 }
 
@@ -40,21 +41,21 @@ function check_question(selected_option) {
   respondido = true;
 
   let q = questList[indice];
-  let feedbackEl = document.getElementById("correct");
+  let feedbackEl = document.getElementById("correct");// pega a respposta desati
   let botoes = document.querySelectorAll("#options-grid button");
 
   // Desabilita as opções após a escolha
   botoes.forEach((b) => (b.disabled = true));
 
-  if (selected_option === q.respostaCorreta) {
+  if (selected_option === q.respostaCorreta) {// pega do arquivo json a resposta
     feedbackEl.innerText = "✓ Resposta correta!";
     feedbackEl.style.color = "#48bb78";
-    botoes[selected_option].classList.add("correct-option");
+    botoes[selected_option].classList.add("correct-option"); //adiciona uma nova classe
   } else {
     feedbackEl.innerText = `✕ Resposta incorreta! A opção certa era ${String.fromCharCode(65 + q.respostaCorreta)}.`;
     feedbackEl.style.color = "#f56565";
     // Destaca a resposta correta em verde mesmo se errar
-    botoes[q.respostaCorreta].classList.add("correct-option");
+    botoes[selected_option].classList.add("incorret-option");// adicioan uma nova classe
   }
   
   feedbackEl.style.display = "block";
@@ -81,7 +82,7 @@ function next_question() {
     document.getElementById("btn-next").style.display = "none";
     
     // Exibe o botão de reiniciar no fim do quiz
-    document.getElementById("btn-restart").style.display = "inline-block";
+    document.getElementById("btn-restart").style.display = "inline-block";// aparece o botão desativado após encerrar
   }
 }
 
