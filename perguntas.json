@@ -1,122 +1,112 @@
 [
-    {
-        "id":1,
-        "pergunta": "lorem ipsum",
-        "opcoes" :[
-
-            "A - lorem ipu",
-            "C - lorem ipu",
-            "B - lorem ipu",
-            "D - lorem ipu"
-        ],
-        "respostaCorreta": 0
-    },
-    {
-        "id":2,
-        "pergunta": "lorem ipsum",
-        "opcoes" :[
-
-            "A - lorem ipu",
-            "C - lorem ipu",
-            "B - lorem ipu",
-            "D - lorem ipu"
-        ],
-        "respostaCorreta": 1
-    },
-    {
-        "id":3,
-        "pergunta": "lorem ipsum",
-        "opcoes" :[
-
-            "A - lorem ipu",
-            "C - lorem ipu",
-            "B - lorem ipu",
-            "D - lorem ipu"
-        ],
-        "respostaCorreta": 2
-    },
-    {
-        "id":4,
-        "pergunta": "lorem ipsum",
-        "opcoes" :[
-
-            "A - lorem ipu",
-            "C - lorem ipu",
-            "B - lorem ipu",
-            "D - lorem ipu"
-        ],
-        "respostaCorreta": 3
-    },
-    {
-        "id":5,
-        "pergunta": "Qual componente é considerado o cérebro do computador?",
-        "opcoes" :[
-
-            "A - Processador (CPU).",
-            "C - Memória RAM.",
-            "B - Placa de vídeo.",
-            "D - Fonte de alimentação."
-        ],
-        "respostaCorreta": 0
-    },
-    {
-        "id":6,
-        "pergunta": "Qual hardware é utilizado para exibir imagens e vídeos?",
-        "opcoes" :[
-
-            "A - Fonte de alimentação.",
-            "C - Placa de vídeo (GPU).",
-            "B - Teclado.",
-            "D - Memória RAM."
-        ],
-        "respostaCorreta": 1
-    },
-    {
-        "id":7,
-        "pergunta": "Qual é a principal função do cooler?",
-        "opcoes" :[
-
-            "A - Melhorar a qualidade das imagens.",
-            "C - Controlar os arquivos do sistema.",
-            "B - Resfriar os componentes do computador.",
-            "D - Aumentar a capacidade de armazenamento."
-        ],
-        "respostaCorreta": 2
-    },
-    {
-        "id":8,
-        "pergunta": "lorem ipsum",
-        "opcoes" :[
-
-            "A - lorem ipu",
-            "C - lorem ipu",
-            "B - lorem ipu",
-            "D - lorem ipu"
-        ],
-        "respostaCorreta": 3
-    },
-    {
-        "id":9,
-        "pergunta": "lorem ipsum",
-        "opcoes" :[
-
-            "A - lorem ipu",
-            "C - lorem ipu",
-            "B - lorem ipu",
-            "D - lorem ipu"
-        ],
-        "respostaCorreta": 0
-    },
-    {
-        "id":10,
-        "pergunta": "lorem ipsum",
-        "opcoes" :[
-
-            "A - lorem ipu",
-            "C - lorem ipu",
-            "B - lorem ipu",
-            "D - lorem ipu"
-        ],
-        "respostaCorreta": 1
-    }
+  {
+    "id": 1,
+    "pergunta": "Qual componente é responsável pelo processamento gráfico?",
+    "opcoes": [
+      "A - SSD",
+      "B - Fonte de alimentação",
+      "C - Placa de vídeo (GPU)",
+      "D - Memória RAM"
+    ],
+    "respostaCorreta": 2
+  },
+  {
+    "id": 2,
+    "pergunta": "Qual é a função da memória RAM?",
+    "opcoes": [
+      "A - Armazenar temporariamente dados dos programas em execução",
+      "B - Guardar arquivos permanentemente",
+      "C - Resfriar o processador",
+      "D - Distribuir energia elétrica"
+    ],
+    "respostaCorreta": 0
+  },
+  {
+    "id": 3,
+    "pergunta": "Qual componente armazena arquivos e programas de forma permanente?",
+    "opcoes": [
+      "A - Cooler",
+      "B - Memória cache",
+      "C - Memória RAM",
+      "D - SSD ou HD"
+    ],
+    "respostaCorreta": 3
+  },
+  {
+    "id": 4,
+    "pergunta": "Qual é a função da placa-mãe?",
+    "opcoes": [
+      "A - Exibir imagens na tela",
+      "B - Conectar e permitir a comunicação entre os componentes",
+      "C - Armazenar energia elétrica",
+      "D - Controlar exclusivamente o áudio"
+    ],
+    "respostaCorreta": 1
+  },
+  {
+    "id": 5,
+    "pergunta": "Qual é a principal diferença entre SSD e HD?",
+    "opcoes": [
+      "A - SSD só funciona com internet",
+      "B - O HD não armazena dados",
+      "C - O SSD serve apenas para instalar programas",
+      "D - O SSD utiliza memória flash e não possui discos magnéticos móveis"
+    ],
+    "respostaCorreta": 3
+  },
+  {
+    "id": 6,
+    "pergunta": "Qual hardware é utilizado para exibir imagens e vídeos?",
+    "opcoes": [
+      "A - Fonte de alimentação",
+      "B - Teclado",
+      "C - Placa de vídeo (GPU)",
+      "D - Memória RAM"
+    ],
+    "respostaCorreta": 2
+  },
+  {
+    "id": 7,
+    "pergunta": "Qual é a principal função do cooler?",
+    "opcoes": [
+      "A - Melhorar a qualidade das imagens",
+      "B - Resfriar os componentes do computador",
+      "C - Aumentar a capacidade de armazenamento",
+      "D - Controlar os arquivos do sistema"
+    ],
+    "respostaCorreta": 1
+  },
+  {
+    "id": 8,
+    "pergunta": "Qual componente é considerado o cérebro do computador?",
+    "opcoes": [
+      "A - Memória RAM",
+      "B - Placa-mãe",
+      "C - Processador (CPU)",
+      "D - Disco Rígido (HD/SSD)"
+    ],
+    "respostaCorreta": 2
+  },
+  {
+    "id": 9,
+    "pergunta": "Qual componente é responsável por receber a energia da tomada e convertê-la nas voltagens adequadas para o funcionamento seguro das outras peças do computador?",
+    "opcoes": [
+      "A - Placa de Vídeo (GPU)",
+      "B - Fonte de Alimentação (ATX)",
+      "C - Placa de Rede",
+      "D - Memória ROM"
+    ],
+    "respostaCorreta": 1
+  },
+  {
+    "id": 10,
+    "pergunta": "Sobre as unidades de armazenamento, qual é a principal vantagem de um SSD (Solid State Drive) em relação a um HD (Hard Disk) tradicional?",
+    "opcoes": [
+      "A - O SSD possui discos magnéticos maiores, o que o torna mais pesado.",
+      "B - O SSD é imune a vírus e ataques cibernéticos de qualquer tipo.",
+      "C - O SSD utiliza memória flash, o que o torna muito mais rápido e resistente a impactos mecânicos.",
+      "D - O SSD depende de conexão com a internet para salvar os arquivos do usuário."
+    ],
+    "respostaCorreta": 2
+  }
 ]
