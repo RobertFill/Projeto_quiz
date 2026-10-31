@@ -47,7 +47,7 @@ h1 {
   align-items: center;
   width: 90%;
   max-width: 850px;
-  border: 1px solid #2d3748;
+  border: 1px solid #283d61;
   border-radius: 16px;
   padding: 45px;
   gap: 18px;
@@ -58,7 +58,7 @@ h1 {
   border-radius: 10px;
 
   box-shadow: 9px 10px 18px black;
-  color: #9487e7;
+  color: #5549a0;
 }
 
 .questions_numberId {
@@ -115,7 +115,7 @@ h1 {
 }
 /*classe vai ser adicionada pelo javascrip*/
 .correct-option {
-  background-color: #38a169 !important; /*dá prioridade*/
+  background-color: #2a9e26 !important; /*dá prioridade*/
   font-size: 1.1rem;
 }
 /*classe vai ser adicionada pelo javascrip*/
