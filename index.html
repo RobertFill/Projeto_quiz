@@ -1,47 +1,75 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Quiz</title>
-  </head>
-  <body>
-    <h1>Jogo de Perguntas e Respostas</h1>
-    <div class="container">
-      <!-- Contador de perguntas -->
-      <div class="questions_numberId" id="questions_numberId">
-        Pergunta 1 de 10
-      </div>
 
-      <!-- Texto da pergunta -->
-      <div class="question" id="question">
-        <p>Carregando pergunta...</p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Quiz: Anatomia de Computadores</title>
+</head>
 
-      <!-- Botões das opções -->
-      <section class="options-grid" id="options-grid">
-        <button class="card-optionA" onclick="check_question(0)"></button>
-        <button class="card-optionC" onclick="check_question(1)"></button>
-        <button class="card-optionB" onclick="check_question(2)"></button>
-        <button class="card-optionD" onclick="check_question(3)"></button>
-      </section>
+<body>
+  <h1>Jogo de Perguntas e Respostas</h1>
 
-      <!-- Feedback de resposta -->
-      <div class="feedback correct" id="correct"></div>
+  <!-- TELA 1: INÍCIO (Visível no arranque) -->
+  <div class="container" id="tela-inicio">
+    <div class="questions_numberId">Bem-vindo ao Quiz!</div>
+    <div class="question">
+      <p>Informe o seu nome para começar e entrar no ranking da sessão:</p>
+    </div>
+    <form id="form-inicio" style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+      <input type="text" id="input-nome" placeholder="Digite seu nome aqui..." required autocomplete="off"
+        style="width: 100%; max-width: 400px; padding: 12px; border-radius: 8px; border: 2px solid #2b5c85; background-color: #18222b; color: white; text-align: center; font-size: 1rem;" />
+      <button type="submit" class="btn-next">Jogar</button>
+    </form>
+  </div>
 
-
-      <!-- Botões de Ação para a proxima pergunta-->
-      <button type="button" class="btn-next" id="btn-next" onclick="next_question()">Próxima >></button>
-
-      <!-- Botões de Ação para a reiciar e só aparece no fina doc  quiz-->
-      <button type="button" class="btn-next" id="btn-restart" onclick="restart_quiz()">Reiniciar Quiz</button>
+  <!-- TELA 2: PERGUNTAS E RESPOSTAS (Oculta por padrão) -->
+  <div class="container d-none" id="tela-jogo" style="display: none;">
+    <!-- Contador de perguntas -->
+    <div class="questions_numberId" id="questions_numberId">
+      Pergunta 1 de 10
     </div>
 
-    <footer>
-      <p>&copyDesenvolvido pelo <strong> Grupo 21 </strong> do curso <strong> FRONT-END • </strong></p>
-    </footer>
+    <!-- Texto da pergunta -->
+    <div class="question" id="question">
+      <p>Carregando pergunta...</p>
+    </div>
 
-    <script src="./script.js"></script>
-  </body>
+    <!-- Botões das opções -->
+    <section class="options-grid" id="options-grid">
+      <button type="button" class="card-optionA" onclick="check_question(0)"></button>
+      <button type="button" class="card-optionC" onclick="check_question(1)"></button>
+      <button type="button" class="card-optionB" onclick="check_question(2)"></button>
+      <button type="button" class="card-optionD" onclick="check_question(3)"></button>
+    </section>
+
+    <!-- Feedback de resposta -->
+    <div class="feedback correct" id="correct"></div>
+
+    <!-- Botão de Ação para a próxima pergunta -->
+    <button type="button" class="btn-next" id="btn-next" onclick="next_question()">Próxima &gt;&gt;</button>
+  </div>
+
+  <!-- TELA 3: FIM E RANKING DA SESSÃO (Oculta por padrão) -->
+  <div class="container d-none" id="tela-final" style="display: none;">
+    <div class="questions_numberId">Fim do Quiz!</div>
+    <div class="question" id="resultado-final"></div>
+
+    <div
+      style="width: 100%; background-color: #18222b; padding: 20px; border-radius: 8px; color: white; text-align: left;">
+      <h3 style="margin-bottom: 12px; color: #948ae7; text-align: center;">Ranking da Sessão</h3>
+      <ol id="lista-ranking" style="padding-left: 25px;"></ol>
+    </div>
+
+    <button type="button" class="btn-next" id="btn-restart" onclick="restart_quiz()">Reiniciar Quiz</button>
+  </div>
+
+  <footer>
+    <p>&copy;Desenvolvido pelo <strong> Grupo 21 </strong> do curso <strong> FRONT-END • </strong></p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>

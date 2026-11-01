@@ -1,101 +1,153 @@
 let questList = [];
-let indice = 0; // Começa na primeira pergunta (posição 0)
+let indice = 0;
 let respondido = false;
+
+let pontuacao = 0;
+let nomeJogador = "";
+
+const telaInicio = document.getElementById("tela-inicio");
+const telaJogo = document.getElementById("tela-jogo");
+const telaFinal = document.getElementById("tela-final");
+const formInicio = document.getElementById("form-inicio");
+const inputNome = document.getElementById("input-nome");
 
 // 1. Carrega o ficheiro JSON
 fetch("perguntas.json")
   .then((res) => res.json())
   .then((dados) => {
     questList = dados;
-    showQuestion();
   })
   .catch((erro) => console.error("Erro ao carregar o JSON:", erro));
 
+// Evento para capturar o nome e iniciar o jogo
+formInicio.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const nomeDigitado = inputNome.value.trim();
+  if (nomeDigitado) {
+    nomeJogador = nomeDigitado;
+    iniciarQuiz();
+  }
+});
+
+/* Alterna a exibição das telas controlando o estilo display diretamente */
+function alternarTela(telaAtiva) {
+  [telaInicio, telaJogo, telaFinal].forEach((t) => {
+    t.classList.add("d-none");
+    t.style.display = "none";
+  });
+
+  telaAtiva.classList.remove("d-none");
+  telaAtiva.style.display = "flex";
+}
+
+function iniciarQuiz() {
+  indice = 0;
+  pontuacao = 0;
+  alternarTela(telaJogo);
+  showQuestion();
+}
+
 function showQuestion() {
-  respondido = false; // Libera a resposta para a nova pergunta
-  
-  let feedbackEl = document.getElementById("correct");// o display desativado de resposta correta
+  respondido = false;
+
+  let feedbackEl = document.getElementById("correct");
   feedbackEl.style.display = "none";
 
   let q = questList[indice];
 
-  // Atualiza o contador de perguntas (ex: Pergunta 1 de 10)
   document.getElementById("questions_numberId").innerText =
     `Pergunta ${indice + 1} de ${questList.length}`;
-    
-  // Atualiza o texto da pergunta
+
   document.getElementById("question").innerText = q.pergunta;
 
-  // Atualiza o texto dos botões e reativa os cliques
   let botoes = document.querySelectorAll("#options-grid button");
   botoes.forEach((btn, i) => {
-    btn.innerText = q.opcoes[i];
+    btn.innerText = q.alternativas[i];
     btn.disabled = false;
-    btn.classList.remove("correct-option"); // Limpa o destaque verde anterior
-    btn.classList.remove("incorret-option"); // Limpa o destaque vermelho anterior
+    btn.classList.remove("correct-option");
+    btn.classList.remove("incorret-option");
   });
+
+  if (botoes.length > 0) botoes[0].focus();
 }
 
 function check_question(selected_option) {
-  if (respondido) return; // Impede alterar a resposta após responder
+  if (respondido) return;
   respondido = true;
 
   let q = questList[indice];
-  let feedbackEl = document.getElementById("correct");// pega a respposta desati
+  let feedbackEl = document.getElementById("correct");
   let botoes = document.querySelectorAll("#options-grid button");
 
-  // Desabilita as opções após a escolha
   botoes.forEach((b) => (b.disabled = true));
 
-  if (selected_option === q.respostaCorreta) {// pega do arquivo json a resposta
-    feedbackEl.innerText = "✓ Resposta correta!";
+  let fonteHTML = q.fonte ? `<br><br><small><b>Fonte:</b> <a href="${q.fonte}" target="_blank" style="color: #63b3ed; text-decoration: underline;">${q.fonte}</a></small>` : '';
+  let explicacaoText = q.explicacao ? `<br><em>${q.explicacao}</em>` : '';
+
+  let respostaCerta = q.resposta !== undefined ? q.resposta : q.respostaCorreta;
+
+  if (selected_option === respostaCerta) {
+    pontuacao += 10;
+    feedbackEl.innerHTML = `✓ Resposta correta! ${explicacaoText}${fonteHTML}`;
     feedbackEl.style.color = "#48bb78";
-    botoes[selected_option].classList.add("correct-option"); //adiciona uma nova classe
+    botoes[selected_option].classList.add("correct-option");
   } else {
-    feedbackEl.innerText = `✕ Resposta incorreta! A opção certa era ${String.fromCharCode(65 + q.respostaCorreta)}.`;
+    feedbackEl.innerHTML = `✕ Resposta incorreta! A opção certa era a letra ${String.fromCharCode(65 + respostaCerta)}. ${explicacaoText}${fonteHTML}`;
     feedbackEl.style.color = "#f56565";
-    // Destaca a resposta correta em verde mesmo se errar
-    botoes[selected_option].classList.add("incorret-option");// adicioan uma nova classe
+    botoes[selected_option].classList.add("incorret-option");
+    botoes[respostaCerta].classList.add("correct-option");
   }
-  
+
   feedbackEl.style.display = "block";
+  document.getElementById("btn-next").focus();
 }
 
 function next_question() {
-  // Evita avançar sem responder
   if (!respondido) {
     alert("Por favor, selecione uma resposta antes de avançar!");
     return;
   }
 
-  // Avança o índice e atualiza a tela
   if (indice < questList.length - 1) {
     indice++;
     showQuestion();
   } else {
-
-    // Tela de encerramento do Quiz
-    document.getElementById("questions_numberId").innerText = "Fim do Quiz!"; // mensagem após terminar o quiz
-    document.getElementById("question").innerText = "Parabéns! Você concluiu todas as perguntas.";
-    document.getElementById("options-grid").style.display = "none";
-    document.getElementById("correct").style.display = "none";
-    document.getElementById("btn-next").style.display = "none";
-    
-    // Exibe o botão de reiniciar no fim do quiz
-    document.getElementById("btn-restart").style.display = "inline-block";// aparece o botão desativado após encerrar
+    finalizarQuiz();
   }
 }
 
+function finalizarQuiz() {
+  salvarRanking(nomeJogador, pontuacao);
+  renderizarRanking();
+
+  document.getElementById("resultado-final").innerText =
+    `Parabéns, ${nomeJogador}! Você concluiu todas as perguntas e fez ${pontuacao} pontos.`;
+
+  alternarTela(telaFinal);
+  document.getElementById("btn-restart").focus();
+}
+
+function salvarRanking(nome, pontos) {
+  let ranking = JSON.parse(sessionStorage.getItem("ranking")) || [];
+  ranking.push({ nome, pontos, data: new Date().toLocaleTimeString() });
+  ranking.sort((a, b) => b.pontos - a.pontos);
+  sessionStorage.setItem("ranking", JSON.stringify(ranking));
+}
+
+function renderizarRanking() {
+  let ranking = JSON.parse(sessionStorage.getItem("ranking")) || [];
+  let listaEl = document.getElementById("lista-ranking");
+  listaEl.innerHTML = "";
+
+  ranking.forEach((pos, i) => {
+    let li = document.createElement("li");
+    li.textContent = `${i + 1}º Lugar: ${pos.nome} — ${pos.pontos} pts`;
+    listaEl.appendChild(li);
+  });
+}
+
 function restart_quiz() {
-  indice = 0; // Reinicia o contador para a primeira pergunta
-  
-  // Exibe novamente a grelha de opções e o botão de próxima
-  document.getElementById("options-grid").style.display = "grid";
-  document.getElementById("btn-next").style.display = "inline-block";
-  
-  // Esconde o botão de reiniciar
-  document.getElementById("btn-restart").style.display = "none";
-  
-  // Recarrega a interface com a primeira pergunta
-  showQuestion();
+  alternarTela(telaInicio);
+  inputNome.value = nomeJogador;
+  inputNome.focus();
 }
