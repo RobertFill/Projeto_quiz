@@ -2,111 +2,131 @@
   {
     "id": 1,
     "pergunta": "Qual componente é responsável pelo processamento gráfico?",
-    "opcoes": [
+    "alternativas": [
       "A - SSD",
       "B - Fonte de alimentação",
       "C - Placa de vídeo (GPU)",
       "D - Memória RAM"
     ],
-    "respostaCorreta": 2
+    "resposta": 2,
+    "explicacao": "A GPU (Graphics Processing Unit) é um processador especializado projetado para manipular e acelerar a criação de gráficos e computação paralela.",
+    "fonte": "https://www.intel.com.br/content/www/br/pt/products/docs/processors/cpu-vs-gpu.html"
   },
   {
     "id": 2,
     "pergunta": "Qual é a função da memória RAM?",
-    "opcoes": [
+    "alternativas": [
       "A - Armazenar temporariamente dados dos programas em execução",
       "B - Guardar arquivos permanentemente",
       "C - Resfriar o processador",
       "D - Distribuir energia elétrica"
     ],
-    "respostaCorreta": 0
+    "resposta": 0,
+    "explicacao": "A RAM é uma memória volátil de acesso aleatório que armazena os dados do sistema operacional e das aplicações em tempo de execução para rápida leitura pela CPU.",
+    "fonte": "https://www.ibm.com/br-pt/topics/ram"
   },
   {
     "id": 3,
     "pergunta": "Qual componente armazena arquivos e programas de forma permanente?",
-    "opcoes": [
+    "alternativas": [
       "A - Cooler",
       "B - Memória cache",
       "C - Memória RAM",
       "D - SSD ou HD"
     ],
-    "respostaCorreta": 3
+    "resposta": 3,
+    "explicacao": "Dispositivos de armazenamento secundário (HD e SSD) são não-voláteis, mantendo a persistência dos dados salvos no sistema mesmo na ausência de energia elétrica.",
+    "fonte": "https://www.oracle.com/br/database/what-is-data-storage/"
   },
   {
     "id": 4,
     "pergunta": "Qual é a função da placa-mãe?",
-    "opcoes": [
+    "alternativas": [
       "A - Exibir imagens na tela",
       "B - Conectar e permitir a comunicação entre os componentes",
       "C - Armazenar energia elétrica",
       "D - Controlar exclusivamente o áudio"
     ],
-    "respostaCorreta": 1
+    "resposta": 1,
+    "explicacao": "A placa-mãe (Motherboard) é o circuito impresso principal que provê o barramento e as conexões elétricas e lógicas entre CPU, memória e periféricos.",
+    "fonte": "https://www.alura.com.br/artigos/hardware-como-funciona-o-computador"
   },
   {
     "id": 5,
     "pergunta": "Qual é a principal diferença entre SSD e HD?",
-    "opcoes": [
+    "alternativas": [
       "A - SSD só funciona com internet",
       "B - O HD não armazena dados",
       "C - O SSD serve apenas para instalar programas",
       "D - O SSD utiliza memória flash e não possui discos magnéticos móveis"
     ],
-    "respostaCorreta": 3
+    "resposta": 3,
+    "explicacao": "SSDs utilizam chips de memória flash NAND sem partes mecânicas, garantindo menor tempo de latência na leitura/escrita de dados em comparação aos discos magnéticos de um HD.",
+    "fonte": "https://www.kingston.com/br/ssd/ssd-vs-hdd"
   },
   {
     "id": 6,
     "pergunta": "Qual hardware é utilizado para exibir imagens e vídeos?",
-    "opcoes": [
+    "alternativas": [
       "A - Fonte de alimentação",
       "B - Teclado",
       "C - Placa de vídeo (GPU)",
       "D - Memória RAM"
     ],
-    "respostaCorreta": 2
+    "resposta": 2,
+    "explicacao": "A placa de vídeo contém a GPU e a VRAM necessárias para processar as rotinas de renderização e enviar o sinal de vídeo para a interface de saída (HDMI/DisplayPort).",
+    "fonte": "https://www.nvidia.com/pt-br/drivers/what-is-gpu/"
   },
   {
     "id": 7,
     "pergunta": "Qual é a principal função do cooler?",
-    "opcoes": [
+    "alternativas": [
       "A - Melhorar a qualidade das imagens",
       "B - Resfriar os componentes do computador",
       "C - Aumentar a capacidade de armazenamento",
       "D - Controlar os arquivos do sistema"
     ],
-    "respostaCorreta": 1
+    "resposta": 1,
+    "explicacao": "O cooler gerencia a dissipação térmica do hardware (principalmente da CPU), prevenindo o *thermal throttling* (redução de desempenho por aquecimento) e danos físicos aos circuitos.",
+    "fonte": "https://www.corsair.com/br/pt/explorer/diy-builder/cpu-coolers/how-does-a-cpu-cooler-work/"
   },
   {
     "id": 8,
     "pergunta": "Qual componente é considerado o cérebro do computador?",
-    "opcoes": [
+    "alternativas": [
       "A - Memória RAM",
       "B - Placa-mãe",
       "C - Processador (CPU)",
       "D - Disco Rígido (HD/SSD)"
     ],
-    "respostaCorreta": 2
+    "resposta": 2,
+    "explicacao": "A CPU (Central Processing Unit) executa o ciclo de busca, decodificação e execução de instruções lógicas e aritméticas dos softwares.",
+    "fonte": "https://www.intel.com.br/content/www/br/pt/gaming/resources/cpu-gpu-game-components.html"
   },
   {
     "id": 9,
     "pergunta": "Qual componente é responsável por receber a energia da tomada e convertê-la nas voltagens adequadas para o funcionamento seguro das outras peças do computador?",
-    "opcoes": [
+    "alternativas": [
       "A - Placa de Vídeo (GPU)",
       "B - Fonte de Alimentação (ATX)",
       "C - Placa de Rede",
       "D - Memória ROM"
     ],
-    "respostaCorreta": 1
+    "resposta": 1,
+    "explicacao": "A fonte de alimentação converte a corrente alternada (AC) da rede em corrente contínua (DC) regulada nas tensões exigidas pelos circuitos internos (+3.3V, +5V, +12V).",
+    "fonte": "https://www.alldatasheet.com/"
   },
   {
     "id": 10,
     "pergunta": "Sobre as unidades de armazenamento, qual é a principal vantagem de um SSD (Solid State Drive) em relação a um HD (Hard Disk) tradicional?",
-    "opcoes": [
+    "alternativas": [
       "A - O SSD possui discos magnéticos maiores, o que o torna mais pesado.",
       "B - O SSD é imune a vírus e ataques cibernéticos de qualquer tipo.",
       "C - O SSD utiliza memória flash, o que o torna muito mais rápido e resistente a impactos mecânicos.",
       "D - O SSD depende de conexão com a internet para salvar os arquivos do usuário."
     ],
-    "respostaCorreta": 2
+    "resposta": 2,
+    "explicacao": "Por eliminar a dependência de componentes mecânicos móveis (como agulhas e pratos), o SSD reduz significativamente o tempo de busca (*seek time*) de dados e suporta choques físicos.",
+    "fonte": "https://www.kingston.com/br/ssd/ssd-vs-hdd"
   }
 ]
