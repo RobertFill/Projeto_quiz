@@ -45,7 +45,7 @@
     </section>
 
     <!-- Feedback de resposta -->
-    <div class="feedback correct" id="correct"></div>
+    <div class="feedback correct" id="correct"></div><!--ira adicionar uma classe no javascript-->
 
     <!-- Botão de Ação para a próxima pergunta -->
     <button type="button" class="btn-next" id="btn-next" onclick="next_question()">Próxima &gt;&gt;</button>
@@ -56,10 +56,9 @@
     <div class="questions_numberId">Fim do Quiz!</div>
     <div class="question" id="resultado-final"></div>
 
-    <div
-      style="width: 100%; background-color: #18222b; padding: 20px; border-radius: 8px; color: white; text-align: left;">
-      <h3 style="margin-bottom: 12px; color: #948ae7; text-align: center;">Ranking da Sessão</h3>
-      <ol id="lista-ranking" style="padding-left: 25px;"></ol>
+    <div class="ranking_box">
+      <h3 class="ranking_title">Ranking da Sessão</h3>
+      <ol id="lista-ranking"></ol><!--irá adicionar uma classe pelo javascript-->
     </div>
 
     <button type="button" class="btn-next" id="btn-restart" onclick="restart_quiz()">Reiniciar Quiz</button>

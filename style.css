@@ -162,6 +162,28 @@ h1 {
   font-size: 1.1rem;
 }
 
+
+/*pagina de ranking*/
+.ranking_box{
+width: 100%;
+background-color: #18222b;
+padding: 20px;
+border-radius: 8px;
+color: white;
+text-align: left;
+
+}
+
+.ranking_title{
+margin-bottom: 12px;
+color: #948ae7; 
+text-align: center;
+}
+
+#lista-ranking{
+  padding-left: 25px
+}
+
 /* ESTILOS DO FOOTER NO RODAPÉ DA PÁGINA */
 footer {
   width: 100%;
