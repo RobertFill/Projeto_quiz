@@ -4,7 +4,7 @@
 
 - HTML
 - CSS
-- JAVASCRIP
+- JAVASCRIPT
 - JSON
 
 <p> Um jogo de multipla escolha onde existe somente uma questão correta.

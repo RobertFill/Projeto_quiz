@@ -1,5 +1,5 @@
-let questList = [];
-let indice = 0;
+let questList = []; //criação de lista de perguntas
+let indice = 0; // começa sempre em 0
 let respondido = false;
 
 let pontuacao = 0;
@@ -32,31 +32,31 @@ formInicio.addEventListener("submit", (e) => {
 /* Alterna a exibição das telas controlando o estilo display diretamente */
 function alternarTela(telaAtiva) {
   [telaInicio, telaJogo, telaFinal].forEach((t) => {
-    t.classList.add("d-none");
-    t.style.display = "none";
+    t.classList.add("d-none");// ira adicidionar uma classe dentro de outra
+    t.style.display = "none";//desativado por padrão
   });
 
-  telaAtiva.classList.remove("d-none");
-  telaAtiva.style.display = "flex";
+  telaAtiva.classList.remove("d-none");//remove classe criada
+  telaAtiva.style.display = "flex";//ativa
 }
 
-function iniciarQuiz() {
+function iniciarQuiz() {//iniciar quiz
   indice = 0;
   pontuacao = 0;
   alternarTela(telaJogo);
   showQuestion();
 }
 
-function showQuestion() {
+function showQuestion() {//mostrar questões
   respondido = false;
 
   let feedbackEl = document.getElementById("correct");
-  feedbackEl.style.display = "none";
+  feedbackEl.style.display = "none";//destiva apos passar para proxima
 
   let q = questList[indice];
 
   document.getElementById("questions_numberId").innerText =
-    `Pergunta ${indice + 1} de ${questList.length}`;
+    `Pergunta ${indice + 1} de ${questList.length}`;//adiciona uma nova pergunta
 
   document.getElementById("question").innerText = q.pergunta;
 
@@ -140,13 +140,13 @@ function renderizarRanking() {
   listaEl.innerHTML = "";
 
   ranking.forEach((pos, i) => {
-    let li = document.createElement("li");
+    let li = document.createElement("li");//cria uma lista
     li.textContent = `${i + 1}º Lugar: ${pos.nome} — ${pos.pontos} pts`;
     listaEl.appendChild(li);
   });
 }
 
-function restart_quiz() {
+function restart_quiz() {// ativa botão para reiniciar quiz
   alternarTela(telaInicio);
   inputNome.value = nomeJogador;
   inputNome.focus();
