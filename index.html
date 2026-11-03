@@ -45,23 +45,27 @@
     </section>
 
     <!-- Feedback de resposta -->
-    <div class="feedback correct" id="correct"></div><!--ira adicionar uma classe no javascript-->
+    <div class="feedback correct" id="correct"></div>
+    <!--ira adicionar uma classe no javascript-->
 
     <!-- Botão de Ação para a próxima pergunta -->
     <button type="button" class="btn-next" id="btn-next" onclick="next_question()">Próxima &gt;&gt;</button>
   </div>
 
   <!-- TELA 3: FIM E RANKING DA SESSÃO (Oculta por padrão) -->
-  <div class="container d-none" id="tela-final" style="display: none;">
+  <div class="container d-none" id="tela-final">
     <div class="questions_numberId">Fim do Quiz!</div>
     <div class="question" id="resultado-final"></div>
+    <!--ira adicionar pelo uma classe no javascript do resultado do quiz-->
 
     <div class="ranking_box">
       <h3 class="ranking_title">Ranking da Sessão</h3>
-      <ol id="lista-ranking"></ol><!--irá adicionar uma classe pelo javascript-->
+      <ol id="lista-ranking"></ol>
+      <!--irá adicionar uma classe de ranking pelo javascript-->
     </div>
 
     <button type="button" class="btn-next" id="btn-restart" onclick="restart_quiz()">Reiniciar Quiz</button>
+    <!--Botão desativado por padrão,ira ser adicionado pelo javascript-->
   </div>
 
   <footer>

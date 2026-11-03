@@ -124,7 +124,7 @@ h1 {
   font-size: 1.1rem;
 }
 
-.feedback { /* só aparece quando respondido*/
+.feedback { /* só aparece quando respondido e adiciona pelo javascript*/
   width: 100%;
   text-align: center;
   background-color: #2a343d;
@@ -135,7 +135,7 @@ h1 {
   font-weight: 500;
 }
 #correct {
-  /*desativar a resposta */
+  /*desativar a resposta, so aparece pelo javascrip */
   display: none;
 }
 
@@ -154,9 +154,6 @@ h1 {
   text-shadow: 1px 1px 1px black;
   box-shadow: 1px 1px 7px black;
 }
-#btn-restart {
-  display: none;
-}
 
 .btn-next:hover {
   font-size: 1.1rem;
@@ -172,6 +169,8 @@ border-radius: 8px;
 color: white;
 text-align: left;
 
+text-align: center;
+
 }
 
 .ranking_title{
@@ -181,8 +180,18 @@ text-align: center;
 }
 
 #lista-ranking{
-  padding-left: 25px
+  padding-left: 25px;
+  list-style: none;
+
+  font-style: italic;
+  color: yellow;
 }
+
+#tela-final{ /*desativado por padrão*/
+display: none;
+
+}
+
 
 /* ESTILOS DO FOOTER NO RODAPÉ DA PÁGINA */
 footer {
@@ -229,6 +238,7 @@ footer p strong {
   h1 {
     font-size: 34px;
   }
+
 }
 
 @media (max-width: 480px) {
