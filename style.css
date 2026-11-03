@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  transition: 0.3s all; /* tempo da animação*/
+  font-family: Consolas, "Courier New", monospace;
+  transition: 0.4s all; /* tempo da animação*/
 }
 
 body {
@@ -29,9 +29,9 @@ h1 {
   text-transform: uppercase;
   text-shadow: 4px 6px 1px #201241;
 
-  color: #948ae7;
+  color: #4b41ac;
   box-shadow: 10px 14px 18px black;
-  background-color: rgba(45, 55, 72, 0.6); /* para deixar meio transparente*/
+  background-color: rgba(8, 19, 39, 0.6); /* para deixar meio transparente*/
   padding: 19px;
   border: 1px solid;
   border-radius: 10px;
@@ -64,7 +64,7 @@ h1 {
 .questions_numberId {
   width: 100%;
   text-align: center;
-  background-color: #18222b;
+  background-color: #010508;
   padding: 22px;
   border-radius: 8px;
   font-weight: 400;
@@ -75,8 +75,8 @@ h1 {
 
 .question {
   width: 100%;
-  background-color: #ffffff;
-  color: #1a202c;
+  background-color: #ebdfdf;
+  color: #010b1f;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -94,7 +94,7 @@ h1 {
 .card-optionB,
 .card-optionC,
 .card-optionD {
-  background-color: #2b5c85;
+  background-color: #2774b3;
   color: #ffffff;
   border: none;
   padding: 20px;
@@ -115,7 +115,7 @@ h1 {
 }
 /*classe vai ser adicionada pelo javascrip*/
 .correct-option {
-  background-color: #38a169 !important; /*dá prioridade*/
+  background-color: #0e6637 !important; /*dá prioridade*/
   font-size: 1.1rem;
 }
 /*classe vai ser adicionada pelo javascrip*/
