@@ -7,13 +7,25 @@
 - JAVASCRIPT
 - JSON
 
+  ## Sobre o Quiz
+
 <p> Um jogo de multipla escolha onde existe somente uma questão correta.
-onde o usuário com o axílio do mouse escolhe uma opção testando sua inteligência e com muita sorte para acertar as questões, após responder uma questão,o jogar passa para a próxima pergunta, com um botaõ de clique.
+onde o usuário com o axílio do mouse escolhe uma opção testando sua inteligência e com muita sorte para acertar as questões, após responder uma questão,o jogar passa para a próxima pergunta, com um botão de clique.
 Após terminar o QUIZ,exibe uma mensagem de parabéns,e com um botão de reiniciar o QUIZ.
 </p>
+<br>
+<br>
 
+ ## Como jogar
+<p>
+ Primeiro informe seu nome, para assim entrar na lista de ranking, após digitar o nome clique no botão abaixo, em jogar.
+ Após isso,irá surgir uma série de perguntas, assim voce irá escolher a alternativas A, B, C, D, escolha uma delas, vá com o mouse em cima da resposta e clique com o botão   direito, se a resposta esta correta, a alternativa irá mudar para a cor verde,e irá aparecer resposta correta no quadro logo abaixo, se a resposta estiver errada, então o   bloco da pergunta ficara em vermelho assim como a resposta escolhida, aparecera no bloco abaico em vermelho,e tambem vai aparecer a alternativa correta.
+ Quando chegar no final do jogo, vai aparecer uma pontuação de 0 a 100 afrente do nome digitado no início
+</p>
 
-
+<br>
+<br>
+ 
 ## Preview Desktop
 <img width="1482" height="818" alt="box1" src="https://github.com/user-attachments/assets/096d78af-d3ee-4007-9edd-e15ef4735f87" />
 <img width="1480" height="816" alt="box2" src="https://github.com/user-attachments/assets/6ffe55e2-98e7-48f5-b84e-54b8585cad09" />
@@ -45,7 +57,7 @@ link do projeto:https://robertfill.github.io/Projeto_quiz/
 
 
 feito por:
- - Filipe Robert Soares
- - Arthur Arias da Silva
- - Juan Pablo Camilo dos Santos
- - Herlon Filgueiras Verissimo de Oliveira
+  - Filipe Robert Soares, responsavel pelo início da base do layout,assim como no javascript.
+  - Arthur Arias da Silva, responsavel pelas perguntas no arquivo json e sua implementação no javascript.
+  - Juan Pablo Camilo dos Santos, responsavel pela idealização das perguntas e revisão do projeto.
+  - Herlon Filgueiras Verissimo de Oliveira, reponsavel pela correção de layout e revisão do javascript.
