@@ -19,7 +19,7 @@ Após terminar o QUIZ,exibe uma mensagem de parabéns,e com um botão de reinici
  ## Como jogar
 <p>
  Primeiro informe seu nome, para assim entrar na lista de ranking, após digitar o nome clique no botão abaixo, em jogar.
- Após isso,irá surgir uma série de perguntas, assim voce irá escolher a alternativas A, B, C, D, escolha uma delas, vá com o mouse em cima da resposta e clique com o botão   direito, se a resposta esta correta, a alternativa irá mudar para a cor verde,e irá aparecer resposta correta no quadro logo abaixo, se a resposta estiver errada, então o   bloco da pergunta ficara em vermelho assim como a resposta escolhida, aparecera no bloco abaico em vermelho,e tambem vai aparecer a alternativa correta.
+ Após isso,irá surgir uma série de perguntas, assim voce irá escolher a alternativas A, B, C, D, escolha uma delas, vá com o mouse em cima da resposta e clique com o botão   direito, se a resposta esta correta, a alternativa irá mudar para a cor verde e tambem vai aparecer a fonte das perguntas com um link,e irá aparecer resposta correta no quadro logo abaixo, se a resposta estiver errada, então o   bloco da pergunta ficara em vermelho assim como a resposta escolhida, aparecera no bloco abaico em vermelho,e tambem vai aparecer a alternativa correta.
  Quando chegar no final do jogo, vai aparecer uma pontuação de 0 a 100 afrente do nome digitado no início
 </p>
 
